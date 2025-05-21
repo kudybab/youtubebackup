@@ -37,6 +37,7 @@ namespace YouTubeBackup.Services
                 "https://www.youtube.com/playlist?list=PLai1TNsgguSmSaj3creKJOr4AjKbZ72z4",
                 "https://www.youtube.com/playlist?list=PLai1TNsgguSmshzaKomtMdkpE6NytA0hi",
                 "https://www.youtube.com/playlist?list=PLai1TNsgguSng6rJi_z18vzprESdJuiI_",
+                "https://www.youtube.com/watch?list=PLai1TNsgguSmK01X0il_bxVedWT8EDk-6", // x
             };
 
             foreach (var playlistUrl in playlists)
