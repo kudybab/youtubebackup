@@ -19,10 +19,10 @@ namespace YouTubeBackup.Services
 
         public void CheckForDuplicates()
         {
-            var localTitles = new LocalSongsStorage().GetLocalStorageTitles();
-            var detectedDuplicates = new DuplicatesCheckCore().FindDuplicateSongs(localTitles.ToList());
+            IEnumerable<string> localTitles = new LocalSongsStorage().GetLocalStorageTitles();
+            List<List<string>> detectedDuplicates = new DuplicatesCheckCore().FindDuplicateSongs(localTitles.ToList());
 
-            foreach (var duplicatedTitles in detectedDuplicates)
+            foreach (List<string> duplicatedTitles in detectedDuplicates)
             {
                 DetectedDuplicate(duplicatedTitles);
             }
@@ -30,10 +30,19 @@ namespace YouTubeBackup.Services
 
         private void DetectedDuplicate(List<string> duplicatedTitles)
         {
-            var configRecordExists = _config.DuplicatedRecords.Any(x => x.Titles.ContainsAll(duplicatedTitles));
-            var configRecord = configRecordExists
+            bool configRecordExists = _config.DuplicatedRecords.Any(x => x.Titles.ContainsAll(duplicatedTitles));
+            DuplicatedRecord configRecord = null;
+            try
+            {
+            configRecord = configRecordExists
                 ? _config.DuplicatedRecords.Single(x => x.Titles.ContainsAll(duplicatedTitles))
                 : null;
+
+            }
+            catch (Exception ex)
+            {
+
+            }
 
             if (configRecordExists)
             {
