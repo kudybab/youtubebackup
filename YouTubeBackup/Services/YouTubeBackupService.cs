@@ -28,16 +28,16 @@ namespace YouTubeBackup.Services
             var playlists = new List<string>
             {
                 //"https://www.youtube.com/playlist?list=PLai1TNsgguSld-dlJy64CZDODD2pOSSMV", // ToDo
-                //"https://www.youtube.com/playlist?list=PLai1TNsgguSnLldVA5aI7qj_OWF-7KYY9",
-                //"https://www.youtube.com/playlist?list=PLai1TNsgguSk_1C_GAIt_kvFQpewLNZPe",
-                //"https://www.youtube.com/playlist?list=PLai1TNsgguSkItk2R0XK9RcN83zi-YLNm",
-                //"https://www.youtube.com/playlist?list=PLai1TNsgguSm1s6ANwTtOEwjnjX8ALAmS", // ok v2
-                //"https://www.youtube.com/playlist?list=PLai1TNsgguSlPodptBP5QOqch-DWf0DDH",
-                //"https://www.youtube.com/playlist?list=PLai1TNsgguSm7tOyLtPZgBhYCj-GoVEWa",
-                //"https://www.youtube.com/playlist?list=PLai1TNsgguSmSaj3creKJOr4AjKbZ72z4",
-                //"https://www.youtube.com/playlist?list=PLai1TNsgguSmshzaKomtMdkpE6NytA0hi",
-                //"https://www.youtube.com/playlist?list=PLai1TNsgguSng6rJi_z18vzprESdJuiI_",
-                //"https://www.youtube.com/watch?list=PLai1TNsgguSmK01X0il_bxVedWT8EDk-6", // x
+                "https://www.youtube.com/playlist?list=PLai1TNsgguSnLldVA5aI7qj_OWF-7KYY9",
+                "https://www.youtube.com/playlist?list=PLai1TNsgguSk_1C_GAIt_kvFQpewLNZPe",
+                "https://www.youtube.com/playlist?list=PLai1TNsgguSkItk2R0XK9RcN83zi-YLNm",
+                "https://www.youtube.com/playlist?list=PLai1TNsgguSm1s6ANwTtOEwjnjX8ALAmS", // ok v2
+                "https://www.youtube.com/playlist?list=PLai1TNsgguSlPodptBP5QOqch-DWf0DDH",
+                "https://www.youtube.com/playlist?list=PLai1TNsgguSm7tOyLtPZgBhYCj-GoVEWa",
+                "https://www.youtube.com/playlist?list=PLai1TNsgguSmSaj3creKJOr4AjKbZ72z4",
+                "https://www.youtube.com/playlist?list=PLai1TNsgguSmshzaKomtMdkpE6NytA0hi",
+                "https://www.youtube.com/playlist?list=PLai1TNsgguSng6rJi_z18vzprESdJuiI_",
+                "https://www.youtube.com/watch?list=PLai1TNsgguSmK01X0il_bxVedWT8EDk-6", // x
             };
 
             foreach (var playlistUrl in playlists)
